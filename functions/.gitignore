@@ -2,3 +2,5 @@ node_modules/
 .env.local
 .env.*.local
 *.log
+# the c10 settings file holds no secrets and is kept in git
+!.env
