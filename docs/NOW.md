@@ -18,18 +18,15 @@
 - Tests: Build Plan 105 passed (plan 20, store 5, briefs 25, theme and contrast 41, function 14), lint clean. Flight Plan: 37 unit and 17 rules passed.
 
 ## Pending: Krishnath
-1. Deploy the rules from Flight Plan (command in the Code report). Until then nobody can sign in to Build Plan.
+1. Deploy the rules: in `E:\Krishnath\flight-plan` run `firebase deploy --only firestore:rules`. Until then nobody can sign in to Build Plan.
 2. Create `apps/c10/config/access` in the Firebase console: `{ emails: [..], admins: [..] }` (lower-case emails, Tejas and yourself, you as admin).
 3. If Google sign-in says the domain is not authorised: Firebase console, Authentication, Settings, Authorized domains, add `build-plan-tejas.web.app` and the preview domain `build-plan-tejas--preview-peobpn5c.web.app`.
 4. Check the preview on your phone (checklist in the brief), then check Anuj's app still opens with his data.
 5. Go live only when ready: `npm run build`, then `npm run deploy:live` from `E:\Krishnath\build-plan`.
 6. If go-live is after 19 Nov 2026, tell Code: the starting check moves to the day after go-live (`PH` in `src/data/phases.js`).
 
-## Pending: GitHub pushes (both blocked by the permission check in the Code session)
-- Build Plan: branch `build/c10-v1` is pushed. `main` is merged locally but not pushed. Push with `git push origin main` from `E:\Krishnathuild-plan`.
-
-## Pending: Flight Plan repo
-- The rules change is committed on branch `shared/c10-rules` in `E:\Krishnath\flight-plan` (rules, 8 new rules tests, hosting pinned to site `flight-plan-e41e4`). Pushing that branch and merging it to `main` was blocked by the permission check in this session, so it is not on GitHub yet.
+## Done: GitHub pushes (2026-11-14)
+- Build Plan `main` is pushed. Flight Plan `shared/c10-rules` was fast-forward merged into its `main` and pushed (rules, 8 new rules tests, hosting pinned to site `flight-plan-e41e4`). The rules are on GitHub but NOT deployed: that is still step 1 under Pending.
 
 ## Later
 - School preboard dates as special days; Blueprint question patterns from the 2026-27 sample papers; board-question banks per subject (add folders and list them in `src/data/qbankSubjects.js`); plan for the days between exams; optional May second exam.
