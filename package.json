@@ -1,0 +1,27 @@
+{
+  "name": "build-plan",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "icons": "node scripts/make-icons.mjs",
+    "test": "vitest run",
+    "lint": "eslint src",
+    "deploy:fn": "firebase deploy --only functions:c10",
+    "deploy:preview": "firebase hosting:channel:deploy preview --only c10 --expires 14d",
+    "deploy:live": "firebase deploy --only hosting:c10"
+  },
+  "devDependencies": {
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0",
+    "vite": "^8.3.6",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.1.0"
+  },
+  "dependencies": {
+    "firebase": "^13.2.0"
+  }
+}

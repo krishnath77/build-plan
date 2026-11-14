@@ -1,0 +1,9 @@
+/* Sign-in / access screen, same night-stone block style as the app */
+#gate{position:fixed;inset:0;z-index:80;display:flex;align-items:center;justify-content:center;padding:24px 16px;background:var(--navy);background-image:linear-gradient(rgba(212,210,200,.06) 1px, transparent 1px),linear-gradient(90deg, rgba(212,210,200,.06) 1px, transparent 1px);background-size:22px 22px,22px 22px}
+#gate[hidden]{display:none}
+#gate .gcard{background:var(--navy2);color:#fff;border-radius:0;padding:28px 22px;width:100%;max-width:400px;display:flex;flex-direction:column;gap:14px;text-align:center;align-items:center;border:3px solid;border-color:#4F5462 #14161B #14161B #4F5462;box-shadow:6px 6px 0 rgba(0,0,0,.35)}
+#gate .gmark{width:60px;height:60px;border-radius:0;background:var(--dirt);border:3px solid;border-color:#A9784A #5E3D1B #5E3D1B #A9784A;border-top:14px solid var(--grass);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:20px}
+#gate h1{color:#fff}
+#gate .gsub{color:var(--hud);font-size:14px}
+#gate .btn{width:100%}
+#gate .gerr{color:var(--amber);font-size:13px}

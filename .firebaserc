@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "default": "flight-plan-e41e4"
+  },
+  "targets": {
+    "flight-plan-e41e4": {
+      "hosting": {
+        "c10": ["build-plan-tejas"]
+      }
+    }
+  }
+}
