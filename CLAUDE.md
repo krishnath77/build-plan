@@ -20,3 +20,11 @@ Both apps belong to the claude.ai project **Flight Deck**. Research, reviews and
 - No emails, keys or personal data in the code or the repo.
 - Update `docs/NOW.md` when you finish.
 - End every run with a short note Krishnath can paste into chat: what was done and what's pending.
+
+## Where things are
+
+- App: `src/` (screens in `src/ui/`, plan logic in `src/logic/`, Class 10 data in `src/data/`). Briefs: `src/briefs.js`. Firestore prefix: `src/store.js` + `src/paths.js`.
+- Function: `functions/` (`index.js`, `src/askClaude.js`, `src/data.js`, `src/paths.js`). Tests: `tests/unit/` and `functions/test/`; run `npm test` and `npm run lint`.
+- Hosting site: `build-plan-tejas` (target `c10`, set in `.firebaserc`). Rules tests live in Flight Plan, not here.
+- Board-question banks are not built: `src/data/qbankSubjects.js` is empty on purpose.
+
