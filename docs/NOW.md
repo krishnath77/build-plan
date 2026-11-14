@@ -25,6 +25,9 @@
 5. Go live only when ready: `npm run build`, then `npm run deploy:live` from `E:\Krishnath\build-plan`.
 6. If go-live is after 19 Nov 2026, tell Code: the starting check moves to the day after go-live (`PH` in `src/data/phases.js`).
 
+## Pending: GitHub pushes (both blocked by the permission check in the Code session)
+- Build Plan: branch `build/c10-v1` is pushed. `main` is merged locally but not pushed. Push with `git push origin main` from `E:\Krishnathuild-plan`.
+
 ## Pending: Flight Plan repo
 - The rules change is committed on branch `shared/c10-rules` in `E:\Krishnath\flight-plan` (rules, 8 new rules tests, hosting pinned to site `flight-plan-e41e4`). Pushing that branch and merging it to `main` was blocked by the permission check in this session, so it is not on GitHub yet.
 
